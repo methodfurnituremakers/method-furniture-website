@@ -1,0 +1,367 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Work Sans', sans-serif;
+    background: #111 url("../img/background.jpg") ;
+    background-size: cover;
+    color: #fff;
+}
+
+.wrapper {
+    margin: 0 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+header a {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+a:hover {
+  color: #444;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ header {
+     animation: fadein 2s;
+     -moz-animation: fadein 2s;
+     -webkit-animation: fadein 2s;
+     -o-animation: fadein 2s;
+ }
+ article {
+   opacity: 0;
+     animation: fadein 2s 0.5s 1;
+     -moz-animation: fadein 2s 0.5s 1;
+     -webkit-animation: fadein 2s 0.5s 1;
+     -o-animation: fadein 2s 0.5s 1;
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ }
+  footer {
+   opacity: 0;
+     animation: fadein 2s 1s 1;
+     -moz-animation: fadein 2s 1s 1;
+     -webkit-animation: fadein 2s 1s 1;
+     -o-animation: fadein 2s 1s 1;
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+ }
+header .logo {
+    width: 120px;
+    display: block;
+    margin: auto;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+  width: 100%;
+  padding: 20px 0;
+}
+.social-links {
+  display: block;
+  text-align:center; }
+.social-links li {
+  display: inline-block;
+}
+nav a {
+  position: absolute;
+  font-size: 0.8em;
+  top:20px;
+}
+nav .about {
+  left:20px;
+}
+nav .contact {
+  right:20px;
+}
+.btn {
+  font-size: 0.8em;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 32px;
+  background: #111;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #333;
+  transition:all 0.3s ease;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #fff;
+ }
+
+.social-links a {
+  padding: 10px;
+  opacity: 0.4;
+  transition:all 0.3s ease;
+}
+.social-links a:hover {
+  opacity: 1;
+}
+.divider {
+  color: #666;
+}
+article h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.3rem;
+}
+article {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 300;
+}
+.contact-page p {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE
+   ==================== */
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE
+   ==================== */
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        /*width: 1026px;
+        margin: 0 auto;*/
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
